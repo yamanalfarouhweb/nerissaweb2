@@ -66,7 +66,7 @@ export default function HeroSection() {
             ===== ROCKY CHARACTER (Animated WebM) =====
             Positioned to stand on the last three letters of "Gladstone" (one)
           */}
-          <div className="absolute -top-20 right-[2%] md:-top-28 md:right-[5%] lg:-top-32 lg:right-[8%] w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 z-10">
+          <div className="absolute -top-10 right-[2%] md:-top-16 md:right-[5%] lg:-top-20 lg:right-[8%] w-40 h-40 md:w-48 md:h-48 lg:w-48 lg:h-48 z-10">
             <video
               ref={videoRef}
               src="/rocky.webm"
