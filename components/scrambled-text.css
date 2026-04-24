@@ -1,0 +1,16 @@
+.text-block {
+  max-width: 900px;
+  font-family: monospace;
+  font-size: clamp(14px, 3vw, 24px);
+  color: #0a0a0f;
+  line-height: 1.8;
+}
+
+.text-block p {
+  margin: 0;
+}
+
+.char {
+  will-change: transform;
+  display: inline-block;
+}
