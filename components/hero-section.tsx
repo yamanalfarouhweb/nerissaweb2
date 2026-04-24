@@ -42,14 +42,9 @@ export default function HeroSection() {
         <div className="relative inline-block mb-8">
           {/* Profile Photo Container */}
           <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
-            {/* 
-              ===== REPLACE THIS IMAGE =====
-              Change the src below to your profile photo path
-              Example: src="/images/nerissa-profile.jpg"
-            */}
             <Image
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop"
-              alt="Nerissa Eryn - Film Student"
+              src="/nerissa-headshot.png"
+              alt="Nerissa Gladstone - Screenwriter"
               fill
               className="object-cover rounded-full border-4 border-film-gold/30 shadow-2xl shadow-film-gold/20"
               priority

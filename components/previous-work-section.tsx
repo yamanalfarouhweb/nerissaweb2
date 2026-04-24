@@ -32,17 +32,23 @@ const universityWork = {
     {
       id: "experimental-film-essay",
       title: "Experimental Film – Music Videos Essay",
-      description: "An essay submitted during my first year at Northumbria University, as part of my Experimental Film module, detailing how music videos can be examples of experimental filmmaking."
+      description: "An essay submitted during my first year at Northumbria University, as part of my Experimental Film module, detailing how music videos can be examples of experimental filmmaking.",
+      pdfUrl: "https://blobs.vusercontent.net/blob/Experimental%20Film%20Essay-lKKYw5SToGLFMSRiQQWb0WOb7nSddz.pdf",
+      pdfName: "Experimental Film Essay.pdf"
     },
     {
       id: "cult-cinema-essay",
       title: "Cult Cinema Essay",
-      description: "An essay submitted during my third year at Northumbria University, as part of my Cult Film & Television module, detailing how cult cinema has changed from the 1970s – with examples taken from The Rocky Horror Picture Show (1975), But I'm A Cheerleader (1999) and The Substance (2024)."
+      description: "An essay submitted during my third year at Northumbria University, as part of my Cult Film & Television module, detailing how cult cinema has changed from the 1970s – with examples taken from The Rocky Horror Picture Show (1975), But I'm A Cheerleader (1999) and The Substance (2024).",
+      pdfUrl: "https://blobs.vusercontent.net/blob/Cult%20Film%20Essay-qZqh1cPAUXVDmmkQZhUHXVCbWeUjqX.pdf",
+      pdfName: "Cult Film Essay.pdf"
     },
     {
       id: "cinema-society-essay",
       title: "Cinema & Society Essay",
-      description: "An essay submitted during my third year at Northumbria University, as part of my Cinema & Society module, detailing how films engage with industrial, cultural and societal issues within the period they were produced – with reference to Carol Clover's 'Final Girl' theory in examples taken from Scream (1996) and I Know What You Did Last Summer (1997)."
+      description: "An essay submitted during my third year at Northumbria University, as part of my Cinema & Society module, detailing how films engage with industrial, cultural and societal issues within the period they were produced – with reference to Carol Clover's 'Final Girl' theory in examples taken from Scream (1996) and I Know What You Did Last Summer (1997).",
+      pdfUrl: "https://blobs.vusercontent.net/blob/Cinema%20and%20Society%20-%20Essay-VhFFdABT9bPHi9W3jE4TrJpkHItXs3.pdf",
+      pdfName: "Cinema and Society Essay.pdf"
     }
   ],
   scriptDevelopment: [
@@ -258,7 +264,19 @@ export default function PreviousWorkSection() {
                       className="bg-white rounded-xl p-6 border-2 border-transparent hover:border-film-dark transition-colors"
                     >
                       <h4 className="font-serif text-lg text-film-dark mb-2">{work.title}</h4>
-                      <p className="text-film-dark/70 text-sm">{work.description}</p>
+                      <p className="text-film-dark/70 text-sm mb-4">{work.description}</p>
+                      {work.pdfUrl && (
+                        <a
+                          href={work.pdfUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          download={work.pdfName}
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-film-dark text-white text-sm rounded-lg hover:bg-yellow-500 hover:text-film-dark transition-all duration-200"
+                        >
+                          <Download className="w-4 h-4" />
+                          Download Essay
+                        </a>
+                      )}
                     </div>
                   ))}
                 </div>
