@@ -20,7 +20,7 @@ const reviews: Review[] = [
     id: 1,
     movieTitle: "Project Hail Mary",
     year: "2026",
-    posterUrl: "https://image.tmdb.org/t/p/w500/xvGCCK8s11wxJHEJkBtvJcBy5Sz.jpg",
+    posterUrl: "/project-hail-mary-poster.jpg",
     rating: 5,
     reviewDate: "April 2026",
     letterboxdUrl: "https://letterboxd.com/nerissa_eryn/",
