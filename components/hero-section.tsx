@@ -38,7 +38,7 @@ export default function HeroSection() {
 
       {/* ===== MAIN CONTENT ===== */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        {/* ===== PROFILE PHOTO WITH ROCKY CHARACTER ===== */}
+        {/* ===== PROFILE PHOTO ===== */}
         <div className="relative inline-block mb-8">
           {/* Profile Photo Container */}
           <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
@@ -54,13 +54,19 @@ export default function HeroSection() {
             <div className="absolute inset-0 rounded-full border border-film-gold/20 scale-110" />
             <div className="absolute inset-0 rounded-full border border-film-gold/10 scale-125" />
           </div>
+        </div>
 
+        {/* ===== NAME / HANDLE WITH ROCKY CHARACTER ===== */}
+        <div className="relative inline-block">
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-wide mb-4 text-film-cream">
+            Nerissa Gladstone
+          </h1>
+          
           {/* 
             ===== ROCKY CHARACTER (Animated WebM) =====
-            Positioned on top of the profile image, doubled in size
-            Adjust positioning with: -top-X -right-X classes
+            Positioned to stand on the last three letters of "Gladstone" (one)
           */}
-          <div className="absolute -top-12 -right-8 md:-top-16 md:-right-12 w-40 h-40 md:w-48 md:h-48 z-10">
+          <div className="absolute -top-20 right-[2%] md:-top-28 md:right-[5%] lg:-top-32 lg:right-[8%] w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 z-10">
             <video
               ref={videoRef}
               src="/rocky.webm"
@@ -76,15 +82,6 @@ export default function HeroSection() {
             />
           </div>
         </div>
-
-        {/* ===== NAME / HANDLE ===== */}
-        {/* 
-          ===== EDIT NAME HERE =====
-          Change the text below to the student's name
-        */}
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-wide mb-4 text-film-cream">
-          Nerissa Gladstone
-        </h1>
 
         {/* ===== TAGLINE ===== */}
         <p className="text-film-gold text-lg md:text-xl tracking-[0.3em] uppercase font-light mb-8">
