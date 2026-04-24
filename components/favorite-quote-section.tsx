@@ -76,10 +76,7 @@ export default function FavoriteQuoteSection() {
           </div>
         </div>
 
-        {/* Interaction hint */}
-        <p className="mt-16 text-film-dark/40 text-xs md:text-sm font-mono tracking-wide">
-          [ hover over the text to interact ]
-        </p>
+
       </div>
     </section>
   )
